@@ -1,0 +1,78 @@
+
+html {
+    font-size: 15px; /* px means 'pixels': the base font size is now 10 pixels high  */
+    font-family: 'Open Sans', sans-serif;
+}
+
+main div {
+    margin-top: 10px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+.section {
+    width: 650px;
+}
+
+.contentHead {
+    width: 650px;
+    background-color: #dcdcdc;
+}
+
+.contentBlock {
+    width: 650px;
+    padding: 0px;
+}
+
+.rlpadding {
+    padding-left: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539F;
+}
+
+form {
+    display: table;
+    margin: 0px;
+}
+
+form h3 {
+    width: 300px;
+    display: table-row;
+    text-align: left;
+}
+
+form div {
+    display: table-row;
+    margin: 0px;
+    padding: 0px;
+}
+
+form label, form input, form select, form button {
+    display: table-cell;
+}
+
+form label {
+    width: 200px;
+    padding-right; 5%;
+    text-align: left;
+}
+
+form input, form select {
+    width: 300px;
+}
+
+form p {
+    display: table-cell;
+    color: #999;
+    font-style: italic;
+    text-align: left;
+    width: 650px;
+}

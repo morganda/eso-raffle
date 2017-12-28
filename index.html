@@ -1,0 +1,51 @@
+{% include "header.html" %}
+
+<main>
+<div id="raffleManagerDiv" class="section contentHead">
+    <form class="rlpadding">
+        <h3>Raffles</h3>
+        <div>
+            <label for="raffleSelector">Select Raffle to Manage: </label>
+            <select name="raffleSelector" autocomplete="off">
+                <option value="raffle123" selected>Guild Raffle - SWAG BAGS</option>
+                <option value="raffle123">Guild Raffle - Week of 12/11/17</option>
+                <option value="raffle123">Guild Raffle - Week of 12/04/17</option>
+            </select>
+        </div>
+        <div>
+            <label></label><button>Add New Raffle</button>
+        </div>
+    </form>
+</div>
+
+<div id="ticketSubmissionDiv" class="section contentBlock">
+    <form id="ticketSubmissionForm" class="rlpadding">
+        <h3>Add tickets to raffle</h3>
+        <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" />
+        </div>
+        <div>
+            <label for="numOfTickets">Number of Tickets:</label>
+            <input type="number" name="numOfTickets" />
+        </div>
+        <div>
+            <label></label><div><button id="addTickets">Add Tickets</button>
+            <button id="undoTicketSubmission" class="hidden">Undo</button></div>
+        </div>
+        <div>
+            <p id="submittedStatus" class="hidden">ihasvoodoo's ticket numbers are 5001-6000</p>
+            <p id="emailMessage" class="hidden">Email response: Thanks, ihasvoodoo! Your ticket numbers are 5001-6000</p>
+        </div>
+    </form>
+</div>
+
+<div id="winnersDiv" class="section contentBlock">
+    <div class="rlpadding">
+        <h3>Drawing</h3>
+        <button id="drawWinner" type="button">Draw next winner</button> <span id="winnerMessage" class="hidden" >Winner is 5144 - ihasvoodoo</span>
+    </div>
+</div>
+</main>
+
+{% include "footer.html" %}
